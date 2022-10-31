@@ -23,6 +23,7 @@ public class CustomerController {
 
     @GetMapping("/list")
     public String listCustomers(Model theModel) {
+        System.out.println("Model theModel entered");
 
         // get customers from the service
         List<Customer> theCustomers = customerService.getCustomers();
